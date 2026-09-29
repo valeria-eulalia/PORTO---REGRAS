@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto RP - Leis e Regras</title>
+    <style>
+        /* Paleta de Cores do Porto RP aplicada no CSS */
+        :root {
+            --preto: #050505; /* Fundo principal */
+            --cinza-escuro: #121212; /* Fundo dos cards */
+            --azul-escuro: #005EC0; /* Azul forte da paleta */
+            --azul-medio: #4E9FF0; /* Azul vibrante */
+            --azul-claro: #D0E2F2; /* Azul quase branco */
+            --branco: #F9F9FF; /* Texto principal */
+        }
+
+        body {
+            background-color: var(--preto);
+            color: var(--branco);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Cabeçalho Topo */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: var(--cinza-escuro);
+            border-bottom: 2px solid var(--azul-escuro);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        .discord-btn {
+            background-color: var(--azul-escuro);
+            color: var(--branco);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .discord-btn:hover {
+            background-color: var(--azul-medio);
+        }
+
+        /* Área de Destaque (Hero) */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: radial-gradient(circle, #1a1a1a 0%, var(--preto) 100%);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span {
+            color: var(--azul-medio);
+        }
+
+        .hero p {
+            color: var(--azul-claro);
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Grid de Navegação das Regras (Menu Principal) */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--azul-escuro);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: var(--cinza-escuro);
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #222;
+            transition: 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--branco);
+        }
+
+        .card:hover {
+            border-color: var(--azul-medio);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(78, 159, 240, 0.2);
+        }
+
+        .card h3 {
+            color: var(--azul-medio);
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .card p {
+            color: var(--azul-claro);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <!-- Aqui usamos a sua logo horizontal -->
+        <a href="#">
+            <img src="LOGO Porto RP (2000x2000) (V3) - by Design Ideal.png" alt="Porto RP Logo">
+        </a>
+        <a href="#" class="discord-btn">ENTRAR NO DISCORD</a>
+    </header>
+
+    <!-- ÁREA DE DESTAQUE -->
+    <section class="hero">
+        <!-- Aqui fica legal usar a logo com a âncora ou o ícone do P centralizado (opcional) -->
+        <img src="android-chrome-192x192.png" alt="Ícone Porto RP" style="height: 80px; margin-bottom: 20px;">
+        
+        <h1>CÓDIGO DO <span>PORTO</span></h1>
+        <p>Quem vive no Porto, joga pelas regras da maré.</p>
+    </section>
+
+    <!-- NAVEGAÇÃO DOS CÓDIGOS -->
+    <div class="container">
+        <center><h2 class="section-title">MAPA DA CIDADE</h2></center>
+        
+        <div class="cards-grid">
+            <a href="regras-gerais.html" class="card">
+                <h3>📜 Regras Gerais</h3>
+                <p>Termos de serviço, safezones, RDM, VDM e regras básicas de convivência.</p>
+            </a>
+            
+            <a href="codigo-penal.html" class="card">
+                <h3>⚖️ Código Penal</h3>
+                <p>Lista de crimes, multas e tempos de prisão estipulados pela polícia.</p>
+            </a>
+            
+            <a href="regras-ilegal.html" class="card">
+                <h3>🔫 O Submundo</h3>
+                <p>Regras para facções, assaltos, sequestros e dominação de territórios.</p>
+            </a>
+            
+            <a href="regras-legal.html" class="card">
+                <h3>🚑 Setor Legal</h3>
+                <p>Diretrizes para Polícia (BPM), Hospital (HP) e Mecânica.</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
